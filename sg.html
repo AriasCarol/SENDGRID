@@ -1,0 +1,34 @@
+<!-- const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey('TU_API_KEY');
+
+const msg = {
+  to: 'destinatario@example.com',
+  from: 'tu-correo-verificado@example.com',
+  subject: 'Correo con HTML personalizado',
+  text: 'Este es el cuerpo en texto plano, para clientes que no soportan HTML.',
+  html: `
+    <div style="font-family: Arial, sans-serif; color: #333;">
+      <h1 style="color: #4CAF50;">¡Bienvenido a nuestro servicio!</h1>
+      <p>Este es un correo con <strong>contenido HTML</strong> para hacer el mensaje más atractivo visualmente.</p>
+      <p>Puedes agregar listas, imágenes, y enlaces:</p>
+      <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+      </ul>
+      <p>Visita nuestro sitio web: <a href="https://example.com" target="_blank">example.com</a></p>
+      <p><img src="https://via.placeholder.com/150" alt="Imagen de ejemplo"></p>
+      <p>Saludos,<br>El equipo de soporte</p>
+    </div>
+  `,
+};
+
+sgMail
+  .send(msg)
+  .then(() => {
+    console.log('Correo enviado exitosamente');
+  })
+  .catch((error) => {
+    console.error('Error al enviar el correo:', error.response.body.errors);
+  });
+-->
